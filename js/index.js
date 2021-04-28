@@ -1,23 +1,23 @@
 $(document).ready(function(){
-
-$(".study1").hover("click", function(){
-    $(this).css("background-color","red");
-   
-
-// $(".study1").on("hover",function(){
-// $(this).addClass("transform");
-// $(this).effect("bounce", {times:1},2000);
+    $(".study1").hover(function(){
+      $(this).width(1.25*$(this).width());
+      $(this).height(1.25*$(this).height());
     
-// });
+    },function(){
+        $(this).width(0.8*$(this).width());
+        $(this).height(0.8*$(this).height());
 
-// $('.study1 button').on("click", function(){
-//     $('.cssChange').css("background-color","red");
-//   });
-
-
+    });
 
 
+    // $('.study1').hover(function(){
+    //     $(this).css("transform", "scale(1.1, 1.1)");
+    //  }, function(){
+    //     $(this).css("transform", "none");
+    //  });
 
+
+  
 
 });
-});
+
