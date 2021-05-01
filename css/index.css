@@ -1,6 +1,7 @@
 body {
-    background-color: #ffffff;
+    background-color:#07071f;
     font-family: Montserrat, sans-serif;
+    color: white;
 }
 
 .topnav {
@@ -15,7 +16,7 @@ body {
 
 .topnav a {
     float: left;
-    color: #000000;
+    color: white;
     font-family: Montserrat, sans-serif;
     font-size: 32px;
     display: flex;
@@ -48,16 +49,27 @@ body {
     width: 50%;
 }*/
 
+.heroText{
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
 .heroContent span{
 
-    font-size: 32px;
+    font-size: 28px;
     margin-left: 10%;
+
 }
 
 .heroContent p{
-    font-size: 36px;
-    width: 50%;
+    font-size: 32px;
+    width: 80%;
     margin-left: 10vw;
+    line-height: 44px;
     
 }
 
@@ -100,6 +112,8 @@ body {
     
 }*/
 
+
+/* flex container is used on the skills page */
 .flexContainer{
     display:flex;
     flex-direction: row;
@@ -107,6 +121,7 @@ body {
     background-color:#CEC8C8;
     padding: 10px;
     margin: 10px;
+    border: 5px solid white;
     
 }
 
@@ -114,12 +129,19 @@ body {
     flex-direction: row;
     padding:10px;
     margin: 10px;
+    
 }
 
 
 .mySkills h1{
-  text-align: center;
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10vh;
+    font-weight: normal;
 }
+
 
 .flexContainer img{
     display: block;
@@ -130,18 +152,210 @@ body {
 
 .flexContainer h3{
     text-align: center;
+    color: white;
 }
 
 .flexContainer p{
     text-align: center;
+    color: white;
+}
+
+/* below grid is used on the homepage for case studies */
+.workGrid{
+    display: block;
+    margin-top: 8vh;
+    height: auto;
+  
+}
+
+.workGrid > *{
+    display:inline-flexbox;
+    background-color: #CEC8C8;
+    box-shadow: 0px 4px 4px 0px #00000066;
+    border-radius: 8px;
+    width: 80vw;
+    height:40vh;
+    margin: 1em auto;
+    justify-content: space-between;
+    padding:3vh 0;
+   
+}
+
+.myWork h1{
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 15vh;
+    font-weight: normal;
+}
+
+.workGrid > * h4{
+    /* margin-left: 1em; */
+    align-self: center;
+    font-size: 24px;
+    font-weight: normal;
+    color:white;
+    margin: 15vh 0 1vh 3vw;
+    
+}
+
+
+.workGrid > * p {
+    margin-left:3vw;
+    font-weight: normal;
+    color:white;
+    align-self: center;
+    color:white;
+    max-height: 1rem;
+    /* margin-bottom:-8em; */
+
+}
+
+.workGrid > * button{
+    width: 125px;
+    height: 50px;
+    /* margin-bottom: 3vh; */
+    border:2px solid white;
+    margin-right:3vw;
+    align-self: flex-end;
+    border-radius: 8px;
+   float:right;
+}
+
+ footer{
+    /*position: static;
+    width:100%;
+     left: 0;
+     position: fixed;
+   height:90px; */  
+   margin-top: 90px;
+   margin-bottom: 20px;
+} 
+
+
+
+
+
+.scrollArrow {
+    /* position: fixed; */
+    float: right;
+    margin-right: 3vw;
+    /* left:95%;
+    bottom: 7%; */
+}
+      
+
+/* used on the about me page */
+
+
+ /* .nameHeader{
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    
+} */ 
+
+/* .nameHeader introPhoto{
+        float: right;
+        text-align: right;
+} */
+
+
+.namePhoto{
+    
+    text-align: left;
+     margin-left:8vw;
+     margin-top: 10vh;
+}
+
+ .nameContent span{
+
+    font-size: 28px;
+    margin-left: 8vw;
+   
+
+}
+
+.nameContent p{
+    font-size: 24px;
+    width: 80%;
+    margin-left: 8vw;
+    
+    
+}
+
+.nameContent h4{
+    font-size: 26px;
+    margin-left: 8vw;
+
 }
 
 
 
+.aboutPara{
+    display: block;
+    margin-right: auto;
+    margin-left:auto;
+    /* margin-top: 20px;
+    margin-bottom: 20px;  */
+    padding:8vw;
+} 
 
+.aboutPara h5{
+    font-size: 26px;
+    font-weight:normal;
+    line-height: 52px;
+    justify-content: center;
+    margin-top: 1vh;
+}
 
+.aboutPara h4{
+    font-size: 28px;
+    font-weight:normal;
+    line-height: 52px;
+    justify-content: center;
 
+} 
 
+@media only screen and (max-width: 600px){
+    .flexContainer{
+        flex-direction:column;
+        display: flex;
+       /* width:100%;*/
+        height: auto;
+        }
+    .flexContainer div{
+        flex-direction: column;
+        display: flex;
+       /* width:100%;*/
+    }
+
+    .flexContainer h3{
+        align-content: center;
+        
+    }
+    .flexContainer p{
+        align-content: flex-start;
+    }
+    .flexContainer img{
+        flex-direction: column;
+        align-content: center;
+        padding:5%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .topnav img{
+        padding-left: 5%;}
+
+    }
+        
+
+/* old css
 .mywork{
     width: 100vw;
 }
@@ -162,17 +376,7 @@ body {
 
 }
 
-/*.workGrid{
-margin: 0px 5%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "study1 study1 study1"
-  "study2 study2 study2"
-  "study3 study3 study3"
-  ;
-}*/
+
 
 .study1{
     grid-column: 2/8;
@@ -298,7 +502,7 @@ margin: 0px 5%;
     grid-row: 5/7;
     margin: 0.5em;
 
-}
+} */
 
 /*.transform{
     width:110%;
@@ -311,47 +515,7 @@ margin: 0px 5%;
 
 
 
-footer{
-    /*position: static;
-    width:100%;
-     left: 0;
-     position: fixed;*/
-    height: 90px;   
-}
 
-
-@media only screen and (max-width: 600px){
-    .flexContainer{
-        flex-direction:column;
-        display: flex;
-       /* width:100%;*/
-        height: auto;
-        }
-    .flexContainer div{
-        flex-direction: column;
-        display: flex;
-       /* width:100%;*/
-    }
-
-    .flexContainer h3{
-        align-content: center;
-        
-    }
-    .flexContainer p{
-        align-content: flex-start;
-    }
-    .flexContainer img{
-        flex-direction: column;
-        align-content: center;
-        padding:5%;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .topnav img{
-        padding-left: 5%;}
-
-    }
         
 
     
@@ -414,7 +578,7 @@ nav{
 }
 
 #study3{
-    /*position: absolute;
+    position: absolute;
     padding: 5%;
     left: 138px;
     top: 1673px;
@@ -424,4 +588,3 @@ nav{
     border-radius: 8px;
     
 }*/
-
